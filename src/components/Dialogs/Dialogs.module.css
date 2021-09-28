@@ -5,8 +5,13 @@ grid-template-columns: 2fr 10fr;
 .dialogsItems{
 padding: 10px;
 }
+.dialogsItems a{
+color: blue;
+text-decoration: none;
+}
 .dialogsItems .active{
 color: violet;
+
 }
 .messages{
 padding: 10px;
