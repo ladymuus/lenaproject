@@ -9,7 +9,7 @@ const Nav = () => {
       <div className={n.item}>
         <a href="/dialogs">Messages</a></div>
       <div className={n.item}>
-        <a>News</a></div>
+        <a href="news">News</a></div>
       <div className={n.item}>
         <a>Music</a></div>
       <div className={n.item}>

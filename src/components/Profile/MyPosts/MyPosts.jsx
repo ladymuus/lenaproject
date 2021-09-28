@@ -10,7 +10,7 @@ const MyPosts = () => {
     <button>Send</button>
 <div className={prof.post}>
 <Post message='Hi, how are you?' Like='+15' />
-<Post message='So-so good!))' Like='27'/>
+<Post message='So-so good!))' Like='+27'/>
 </div>
 </div>)
 }
