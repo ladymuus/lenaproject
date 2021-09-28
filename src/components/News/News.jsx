@@ -1,13 +1,12 @@
 import React from 'react';
-import n from './News.module.css';
+import s from './News.module.css';
 
-const Newss=() => {
+const News=() => {
     return (
 <div>
-<div><img src='https://www.spletnik.ru/img/__post/60/60cf0ac41d8c3404a26fb544a0887c1d_994.jpg'></img>
-</div>
+<a>News</a>
 </div>
 );
 }
 
-export default Newss;
+export default News;
