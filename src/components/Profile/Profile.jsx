@@ -1,12 +1,12 @@
 import React from 'react';
 import s from './Profile.module.css';
 import MyPosts from './MyPosts/MyPosts';
+import ProfileInfo from './ProfileInfo/ProfileInfo';
 
 const Content=() => {
     return (
 <div>
-<div className={s.item}><img src='https://i.artfile.ru/1920x1200_1521837_[www.ArtFile.ru].jpg'></img>
-</div>
+<ProfileInfo/>
 <MyPosts/>
 </div>
 );
