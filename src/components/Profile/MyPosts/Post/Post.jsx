@@ -6,7 +6,7 @@ const Post=(props) => {
 <div><img src='https://www.spletnik.ru/img/__post/60/60cf0ac41d8c3404a26fb544a0887c1d_994.jpg'></img>
 {props.message}
 </div>
-<span>Like{props.Like}</span>
+<span>Like{props.like}</span>
 </div>
 );
 }
