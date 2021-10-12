@@ -5,7 +5,10 @@ import s from './../Dialogs.module.css';
 const DialogItem= (props)=>{
   let path="/dialogs/" + props.id
     return (
-        <div className={s.dialog}><NavLink to={path} activeClassName={s.active}>{props.name}</NavLink></div>
+        <div className={s.dialog}>
+          <img src='https://vraki.net/sites/default/files/inline/images/1_42.jpg'></img>
+          <NavLink to={path} activeClassName={s.active}>{props.name}</NavLink>
+          </div>
     )
 }
 

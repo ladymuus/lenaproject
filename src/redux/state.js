@@ -9,7 +9,7 @@
       messages:[
       {id: 1, message: 'Heeeeeeyy))'},
       {id: 2, message: 'What are you doing?'},
-      {id: 3, message: 'See you))'}
+      {id: 3, message: 'I`m training)'}
     ],
     dialogs:[
       {id: 1, name: 'Max'},

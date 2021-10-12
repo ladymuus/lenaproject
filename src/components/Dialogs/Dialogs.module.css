@@ -15,7 +15,13 @@ color: violet;
 }
 .messages{
 padding: 10px;
+padding-right: 200px;
 }
 .messages.message{
 padding: 10px;
+}
+img {
+    width: 20px;
+    border-radius: 20px;
+    padding: 2px;
 }
