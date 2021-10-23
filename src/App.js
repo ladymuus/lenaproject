@@ -10,23 +10,21 @@ import Settings from './components/Settings/Settings';
 import { BrowserRouter, Route } from 'react-router-dom';
 import { addPost } from './redux/state';
 
-const App = (props) => {
+const App = (props) => { //у пропса коллбаки или свойства сидят, а конст является компонентой
   return (
-    <BrowserRouter>
     <div className='app-wrapper'>
       <Header />
       <Nav />
-        <div className='app-wrapper-content'>
-        <Route path='/dialogs' render={()=> <Dialogs state={props.state.dialogsPage}/>}/>
-      <Route path='/profile' render={()=> <Profile 
-      profilePage={props.state.profilePage} 
-      dispatch={props.dispatch}/>}/>
-      <Route path='/news' render={()=> <News/>} />
-      <Route path='/music' render={()=> <Music/>}/>
-      <Route path='/settings' render={()=> <Settings/>}/>
+      <div className='app-wrapper-content'> 
+        <Route path='/dialogs' render={()=> <Dialogs store={props.store} />}/>
+        <Route path='/profile' render={()=> <Profile //роут следит за урлом
+          profilePage={props.state.profilePage} //стейт атрибуты со значениями
+          dispatch={props.dispatch}/>}/> 
+        <Route path='/news' render={()=> <News/>} />
+        <Route path='/music' render={()=> <Music/>}/>
+        <Route path='/settings' render={()=> <Settings/>}/>
       </div>
     </div>
-    </BrowserRouter>
   );
 }
 
