@@ -3,7 +3,7 @@ import { NavLink } from "react-router-dom";
 import s from './Dialogs.module.css';
 import DialogItem from './DialogItem/DialogItem';
 import Message from './Message/Message';
-import { sendMessageCreator, updateNewMessageBodyCreator } from '../../redux/state';
+import { sendMessageCreator, updateNewMessageBodyCreator } from '../../redux/dialogs-reducer';
 
 const Dialogs = (props) => {
     let state = props.store.getState().dialogsPage;
@@ -16,7 +16,7 @@ const Dialogs = (props) => {
     }
     let onNewMessageChange=(e)=>{
         let body = e.target.value;
-        props.store.dispatch(updateNewMessageBodyCreator(body))
+        props.store.dispatch(updateNewMessageBodyCreator(body));
     } //e.target достучаться до события, в обычном случае когда событие случается
     return (
         <div className={s.dialogs}>
