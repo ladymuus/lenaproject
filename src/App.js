@@ -8,7 +8,7 @@ import News from './components/News/News';
 import Music from './components/Music/Music';
 import Settings from './components/Settings/Settings';
 import { BrowserRouter, Route } from 'react-router-dom';
-import { addPost } from './redux/state';
+import { addPost } from './redux/store';
 
 const App = (props) => { //у пропса коллбаки или свойства сидят, а конст является компонентой
   return (
@@ -16,7 +16,7 @@ const App = (props) => { //у пропса коллбаки или свойст�
       <Header />
       <Nav />
       <div className='app-wrapper-content'> 
-        <Route path='/dialogs' render={()=> <Dialogs store={props.store} />}/>
+        <Route path='/dialogs' render={()=> <Dialogs store={props.store}/>}/>
         <Route path='/profile' render={()=> <Profile //роут следит за урлом
           profilePage={props.state.profilePage} //стейт атрибуты со значениями
           dispatch={props.dispatch}/>}/> 
