@@ -10,6 +10,7 @@ import Settings from './components/Settings/Settings';
 import { BrowserRouter, Route } from 'react-router-dom';
 import { addPost } from './redux/store';
 import DialogsContainer from './components/Dialogs/DialogsContainer';
+import UsersContainer from './components/Users/UsersContainer';
 
 const App = (props) => { //у пропса коллбаки или свойства сидят, а конст является компонентой
   return (
@@ -19,12 +20,13 @@ const App = (props) => { //у пропса коллбаки или свойст�
       <div className='app-wrapper-content'> 
         <Route path='/dialogs' render={()=> <DialogsContainer />}/>
         <Route path='/profile' render={()=> <Profile />}/> 
+        <Route path='/users' render={()=> <UsersContainer/>}/>  
         <Route path='/news' render={()=> <News/>} />
         <Route path='/music' render={()=> <Music/>}/>
         <Route path='/settings' render={()=> <Settings/>}/>
       </div>
     </div>
   );
-}
+} //редюсер принимает стейт,экшн и по правилу мьютабельности возвращает копии
 
 export default App;

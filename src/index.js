@@ -1,5 +1,5 @@
 import reportWebVitals from './reportWebVitals';
-import store from './redux/store';
+import store from './redux/redux-store';
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
@@ -9,11 +9,13 @@ import {Provider} from 'react-redux';
 
 // let rerenderEntireTree = (state) => 
   ReactDOM.render( //отрисовка всего дерева
+    <React.StrictMode>
     <BrowserRouter>
     <Provider store={store}>
       <App />    
     </Provider>
-    </BrowserRouter>,
+    </BrowserRouter>
+    </React.StrictMode>,
     document.getElementById('root')
   );
 //props прокидывает через все дерево
